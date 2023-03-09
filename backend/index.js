@@ -2,15 +2,15 @@ import express from "express"
 import dotenv from "dotenv"
 import cors from "cors"
 import bodyParser from "body-parser"
-import path from path
+import path from "path"
 import connectDb from "./Middlewares/dbConnection.js"
 import authRoute from "./Routes/authRoute.js"
 import resumeRoute from "./Routes/resumeRoute.js"
 import smartCardRoute from "./Routes/smartCardRoute.js"
 
+connectDb()
 const app = express()
 dotenv.config()
-connectDb()
 
 const port = process.env.PORT || 3002
 

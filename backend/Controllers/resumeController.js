@@ -96,3 +96,12 @@ export const deleteResume = async (req, res) => {
         return res.json({success: false})
     }
 }
+
+export const getAllResumes = async (req, res) => {
+    try {
+        const resumes = await Resume.find();
+        res.json({sucess: true, msg: "api running", resumes})
+    } catch (error) {
+        console.log(error)
+    }
+}

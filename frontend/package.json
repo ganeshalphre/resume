@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "proxy": "https://ganeshswami.gs/api/",
   "private": true,
   "dependencies": {
     "@flaticon/flaticon-uicons": "^2.0.1",
