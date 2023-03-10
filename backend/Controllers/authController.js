@@ -9,7 +9,7 @@ export const sendMailForVerification = async(req, res) => {
     try {
         const otp = Math.floor(1000 + Math.random() * 9000);
         await sendMail(otp, email)
-        console.log({otp})
+        // console.log({otp})
         const oneTimePassword = new OTP({
             otp,
             type

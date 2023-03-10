@@ -14,10 +14,11 @@ let mailTransporter = nodemailer.createTransport({
 const email = (otp, mail) => {
     let mailDetails = {                                                                                                                                                                                                                            
         from: process.env.MAIL_ID,  
-        to: "sridharsp4774@gmail.com",
+        to: mail,
         subject: 'Verifivation Mail',
         text: `OTP - ${otp}`
     };
+    console.log({mail})
     return mailDetails;
 }
 
@@ -27,7 +28,7 @@ const sendMail = async(otp, mail) => await mailTransporter.sendMail(email(otp, m
         console.log(err)
         console.log('Error Occurs');
     } else {
-        console.log('Email sent successfully', {data});
+        // console.log('Email sent successfully', {data});
         return 'Email sent successfully'
     }
 });
