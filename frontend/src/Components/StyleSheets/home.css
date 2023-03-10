@@ -172,3 +172,112 @@
     height: 24rem;
 }
 
+.NewHome {
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-signup form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home-signup form .row {
+    display: flex;
+    align-items: baseline;
+    justify-items: center;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+.row .col-25 {
+    width: 25%;
+    text-align: left    ;
+}
+.row .col-55 {
+    width: 55%;
+}
+.row .col-55 input {
+    border: 2px solid grey;
+}
+
+.home-signup-signin {
+    width: 100%;
+}
+.home-signup {
+    width: 100%;
+}
+.home-signup form {
+    width: 100%;
+}
+.home-signup form .container {
+    width: 40%;
+}
+@media only screen and (max-width: 600px) {
+    .NewHome {
+        height: 100%;
+    }
+    .home-logo {
+        position: relative;
+        top: 4px;
+    }
+    .home-signup form .container {
+        width: 100%;
+    }
+    .row .col-55 {
+        width: 75%;
+    }
+    .footer-links {
+        flex-direction: column;
+        position: relative !important;
+        margin-top: 10rem;
+        gap: 2rem !important;
+    }
+}
+.row .col-55 i {
+    color: grey;
+    font-size: 3rem;
+    font-size: 3rem;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+}
+.home-signup-signin-link {
+    color: grey;
+    font-size: 1.6rem;
+}
+.home-signup-signin-link span {
+    cursor: pointer;
+}
+
+.button-row {
+    align-items: center !important;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    font-size: 1.4rem;
+    color: grey;
+    gap: 3rem;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.home-logo img {
+    width: 3rem;
+}
+
+.home-content {
+    color: gray;
+    font-size: 1.6rem;
+}
+
+.home-logo {
+    position: relative;
+    /* top: -34px; */
+}
+

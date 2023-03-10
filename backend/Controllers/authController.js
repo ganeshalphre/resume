@@ -25,6 +25,7 @@ export const sendMailForVerification = async(req, res) => {
 export const verifyOtp = async(req, res) => {
     const {verifyType, otp, email} = req.body;
     try {
+        console.log(verifyType, otp, email)
         const findOtp = await OTP.findOne({otp});
         if(!findOtp) return res.json({success: false, msg: "Incorrect OTP"})
         if(findOtp.verified) return res.json({success: false, msg:"OTP Already Used"})

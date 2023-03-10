@@ -12,7 +12,7 @@ connectDb()
 const app = express()
 dotenv.config()
 
-const port = process.env.PORT || 3002
+const port = process.env.POR || 3002
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))

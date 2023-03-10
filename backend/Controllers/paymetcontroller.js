@@ -19,7 +19,7 @@ export const paytm = async (req, res) => {
     mid: process.env.PAYTM_MID,
     websiteName: process.env.PAYTM_WEBSITE,
     orderId: orderId,
-    callbackUrl: "http://localhost:3001/callback",
+    callbackUrl: "http://localhost:3002/callback",
     txnAmount: {
       value: amount,
       currency: "INR",
